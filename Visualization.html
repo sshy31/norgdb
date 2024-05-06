@@ -20,6 +20,10 @@
 .button-container {
   display:flex;
 }
+.button:hover {
+  background-color: #3e8e41;
+  color: white;
+}
 
 body {
   font-family: Didot;
@@ -33,9 +37,18 @@ body {
   font-size: 40px;
 }
   h2 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: Ariel;
   text-align: center;
+}
+.parent {
+  font-size: 20px;
+  font-family: Ariel;
+  text-align: center;
+}
+.parent > ul {
+  display: inline-block;
+  text-align: left;
 }
 .footer { 
   padding-bottom: 30px;
@@ -79,8 +92,22 @@ table.citing {
 <button class = "button"><a href = "https://t31s.github.io/pnorgdb/Visualization" style="color: white; text-decoration: none:">Visualization - Instruction</a></button>
 <button class = "button"><a href = "https://t31s.github.io/pnorgdb/Contact" style="color: white; text-decoration: none:">Contact</a></button>
 </div>
-<h2/><large>Visualization</large></h2>
+<h2/>Visualization</h2>
 
+<hr width="100%;" color= "#013220" size="5">
+<div class = "parent">
+<ul style="line-height:200%">
+  <li>Download desired .bed file containing nuclear organelle DNA data of interest from the <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle Database</a>.</li>
+  <li>Go to <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
+  <li>In <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>, select species of interest to open up additional information. </li>
+  <li>In the genome of assemby section of the species information page, click  "Display your data in Ensembl Plants".</li>
+  <li>In the "Data" section of the newly opened tab, click "Choose File" and select the .bed file you downloaded in step 1 from the  <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle Database</a>.</li>
+  <li>Once the desired .bed file containing Nuclear Organelle DNA is attached, click add Data.</li>
+  <li>The nuclear organelle DNA data of interest should now be avaible as a custom track viewable on <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
+</ul>
+</ul>
+</ul>
+</div> 
 <br>
 <br>
 <hr width="100%;" color= "#013220" size="5">
