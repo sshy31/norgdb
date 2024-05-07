@@ -1,131 +1,131 @@
 <head>
-<title>Plant norgDB - Visualization</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+	<title>Plant norgDB - Visualization Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
 
-.button {
-  border: none;
-  background-color: #013220;
-  border: 1px solid #4aff00;
-  color: white;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-family: Times New Roman;
-  font-size: 30px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button-container {
-  display:flex;
-}
-.button:hover {
-  background-color: #3e8e41;
-  color: white;
-}
+		.button {
+			border: none;
+			background-color: #013220;
+			border: 1px solid #4aff00;
+			color: white;
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			font-family: Times New Roman;
+			font-size: 30px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+		.button-container {
+			display:flex;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+			color: white;
+		}
 
-body {
-  font-family: Didot;
-  margin: 0;
-}
-.header {
-  padding: 60px;
-  text-align: center;
-  background: linear-gradient(#013220,#4aff00);
-  color: white;
-  font-size: 40px;
-}
-  h2 {
-  font-size: 35px;
-  font-family: Ariel;
-  text-align: center;
-}
-.parent {
-  font-size: 20px;
-  font-family: Times New Roman;
-  text-align: center;
-}
-.parent > ul {
-  display: inline-block;
-  text-align: left;
-}
-.footer { 
-  padding-bottom: 30px;
-  text-align: center;
-  background: #6082B6;
-  color: white;
-  font-size: 40px;
-} 
-h3 {
-  font-size: 50px;
-  font-family: Times New Roman;
-  text-align: center;
-}
-p2 {
-  font-size: 20px;
-  font-family: Times New Roman;
-  text-align: center;
-}
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  padding-top:20px;
-}
-  p3 {
-  font-size: 15px;
-  font-family: Times New Roman;
-  text-align: center;
-}
-p4 {
-  font-size: 50px;
-  font-family: Times New Roman;
-  text-align: center;
-}
-</style>
+		body {
+			font-family: Didot;
+			margin: 0;
+		}
+		.header {
+			padding: 60px;
+			text-align: center;
+			background: linear-gradient(#013220,#4aff00);
+			color: white;
+			font-size: 40px;
+		}
+		h2 {
+			font-size: 35px;
+			font-family: Ariel;
+			text-align: center;
+		}
+		.parent {
+			font-size: 20px;
+			font-family: Times New Roman;
+			text-align: center;
+		}
+		.parent > ul {
+			display: inline-block;
+			text-align: left;
+		}
+		.footer { 
+			padding-bottom: 30px;
+			text-align: center;
+			background: #6082B6;
+			color: white;
+			font-size: 40px;
+		} 
+		h3 {
+			font-size: 50px;
+			font-family: Times New Roman;
+			text-align: center;
+		}
+		p2 {
+			font-size: 20px;
+			font-family: Times New Roman;
+			text-align: center;
+		}
+		.flex-container {
+			display: flex;
+			flex-direction: column;
+			padding-top:20px;
+		}
+		p3 {
+			font-size: 15px;
+			font-family: Times New Roman;
+			text-align: center;
+		}
+		p4 {
+			font-size: 50px;
+			font-family: Times New Roman;
+			text-align: center;
+		}
+	</style>
 </head>
 <body style="background-color:#f2f2f2;">
-<div class="header">
-  <h1>Plant norgDB</h1>
-  <p>Plant Nuclear Organelle DNA Database</p>
-</div>
-<div class = "button-container">
-<a href = "https://t31s.github.io/norgdb/" style="color: white; text-decoration: none:"; class = "button">Home</a></button>
-<a href = "https://t31s.github.io/norgdb/SpeciesData" style="color: white; text-decoration: none:"; class = "button">Species Data</a></button>
-<a href = "https://t31s.github.io/norgdb/VisualizingData" class = "button">Visualizing Data</a></button>
-</div>
-<h2/>Visualizing Data - Instructions</h2>
+	<div class="header">
+		<h1>Plant norgDB</h1>
+		<p>Plant Nuclear Organelle DNA Database</p>
+	</div>
+	<div class = "button-container">
+		<a href = "https://t31s.github.io/norgdb/" style="color: white; text-decoration: none:"; class = "button">Home</a></button>
+		<a href = "https://t31s.github.io/norgdb/SpeciesData" style="color: white; text-decoration: none:"; class = "button">Species Data</a></button>
+		<a href = "https://t31s.github.io/norgdb/VisualizingData" class = "button">Visualizing Data</a></button>
+	</div>
+	<h2/>Visualizing Data - Instructions</h2>
 
-<hr width="100%;" color= "#013220" size="5">
-<div class = "parent">
-<ul style="line-height:200%">
-  <li>Download desired .bed file containing nuclear organelle DNA data of interest from the <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
-  <li>Go to <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
-  <li>In <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>, select species of interest to open up additional information. </li>
-  <li>In the genome of assemby section of the species information page, click  "Display your data in Ensembl Plants".</li>
-  <li>In the "Data" section of the newly opened tab, click "Choose File" and select the .bed file you downloaded in step 1 from the  <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
-  <li>Once the desired .bed file containing Nuclear Organelle DNA is attached, click "Add Data".</li>
-  <li>The nuclear organelle DNA data of interest should now be avaible as a custom track viewable on <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
-</ul>
-</ul>
+	<hr width="100%;" color= "#013220" size="5">
+	<div class = "parent">
+		<ul style="line-height:200%">
+			<li>Download desired .bed file containing nuclear organelle DNA data of interest from the <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
+			<li>Go to <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
+			<li>In <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>, select species of interest to open up additional information. </li>
+			<li>In the genome of assemby section of the species information page, click  "Display your data in Ensembl Plants".</li>
+			<li>In the "Data" section of the newly opened tab, click "Choose File" and select the .bed file you downloaded in step 1 from the  <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
+			<li>Once the desired .bed file containing Nuclear Organelle DNA is attached, click "Add Data".</li>
+			<li>The nuclear organelle DNA data of interest should now be avaible as a custom track viewable on <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
+		</ul>
+	</ul>
 </ul>
 </div> 
 <br>
 <br>
 <div class="footer">
-<hr width="100%;" color= "#013220" size="5">
+	<hr width="100%;" color= "#013220" size="5">
 	<p3 style = "font-size:25"><b>Noutsos Lab</b></p3>
 	<div class = "flex-container">
-	<p3><b>Contact us: </b></p3>
-	<p3 ><b>Solomon Scheiner: <a href="mailto: sscheine@oldwestbury.edu">sscheine@oldwestbury.edu</a></b></p3>
-	<p3><b>Christos Noutsos: <a href="mailto: noutsosc@oldwestbury.edu">noutsosc@oldwestbury.edu</a></b></p3></td>
-</div>
-<div style = "padding-top: 40px;">	
-<p4>How to Cite:</p4>
-</div>
-<div style = "padding-top: 20px;">	
-<p2>Link to paper</p2>
-</div>
+		<p3><b>Contact us: </b></p3>
+		<p3 ><b>Solomon Scheiner: <a href="mailto: sscheine@oldwestbury.edu">sscheine@oldwestbury.edu</a></b></p3>
+		<p3><b>Christos Noutsos: <a href="mailto: noutsosc@oldwestbury.edu">noutsosc@oldwestbury.edu</a></b></p3></td>
+	</div>
+	<div style = "padding-top: 40px;">	
+		<p4>How to Cite:</p4>
+	</div>
+	<div style = "padding-top: 20px;">	
+		<p2>Link to paper</p2>
+	</div>
 </div>
 </body>
