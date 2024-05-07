@@ -78,6 +78,17 @@
 			font-family: Times New Roman;
 			text-align: center;
 		}
+		table {
+			border-collapse: collapse;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			border-spacing: 50;
+			text-align: justify;
+			padding-top: 5px;
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
 	</style>
 </head>
 <body style="background-color:#f2f2f2;">
@@ -94,17 +105,23 @@
 
 	<hr width="100%;" color= "#013220" size="5">
 	<div class = "parent">
+	<div style = "padding-top:30px;">
+		<table>
+			<tr>
+				<td>
 		<ul style="line-height:200%">
 			<li>Download desired BED file containing nuclear organelle DNA data of interest from the <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
 			<li>Go to <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
 			<li>In <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>, select species of interest to open up additional information. </li>
 			<li>In the "Genome assembly" section of the species information page, click  "Display your data in Ensembl Plants".</li>
-			<li>In the "Data" section of the newly opened tab, click "Choose File" and select the BED file you downloaded in step 1 from the  <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
+			<li>In the "Data" section of the newly opened tab, click "Choose File" and select the BED file you downloaded from the  <a href = "https://t31s.github.io/pnorgdb/SpeciesData">Plant Nuclear Organelle DNA Database</a>.</li>
 			<li>Once the desired BED file containing Nuclear Organelle DNA is attached, click "Add Data".</li>
 			<li>The nuclear organelle DNA data of interest should now be avaible as a custom track viewable on <a href = "https://plants.ensembl.org/index.html">Ensembl Plants</a>.</li>
 		</ul>
-	</ul>
-</ul>
+	</td>
+</tr>
+</table>
+</div>
 </div> 
 	<br>
 	<br>
@@ -113,7 +130,7 @@
 		<div>	
 			<p2 style = "font-size:35"><b>How to Cite:</b></p4>
 		</div>
-		<div style = "padding-top: 15px; padding-bottom: 5px">	
+		<div style = "padding-top: 5px; padding-bottom: 5px">	
 			<p2 style = "font-size:25">Link to paper</p2>
 		</div>
 		<hr width="55%;" color= "#013220" size="2">
